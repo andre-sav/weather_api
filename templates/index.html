@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+
+<h2>UTC Timestamps and Air Contamination Values for Los Angeles</h2>
+
+{% if res %}
+{% for temp in res %}
+
+    <p>{{ temp.datetime }}</p>
+    <p>{{ temp.value }}</p>
+
+    <br>
+
+{% endfor %}
+{% endif %}
+</body>
+
+</html>
